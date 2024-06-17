@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : VIKASH MUNDARI
+  @group             : 
+  @last modified on  : 06-17-2024
+  @last modified by  : VIKASH MUNDARI
+-->
+<!-- <template>
+    <lightning-card>
+        <p>this is parent component</p>
+        <c-message-display name="akash"></c-message-display>
+    </lightning-card>
+</template> -->
+
+<template>
+    <div class="input-box">
+        <lightning-input label="Update Message" value={inputMessage} onchange={handleInputChange}></lightning-input>
+        <lightning-button label="Change Message" onclick={handleButtonClick}></lightning-button>
+    </div>
+    <div class="display-box">
+        <c-message-display message={parentMessage}></c-message-display>
+        <!-- <c-message-display message={parentMessage}></c-message-display> -->
+    </div>
+</template>
